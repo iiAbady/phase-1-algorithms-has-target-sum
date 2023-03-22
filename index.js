@@ -1,8 +1,8 @@
 function hasTargetSum(array, target) { //Sn: N
 	for (let i = 0; i < array.length; i++) { // Tn: N, Sn: 1
-		const remainder = target - array[i]; // Tn: 1, Sn: 1
-		const indexOf = array.indexOf(remainder); // Tn: N, Sn: 1
-		if (indexOf != -1 && indexOf != i) { // Tn: 1, Sn: 1
+		const remainder = target - array[i]; // Tn: N, Sn: 1
+		const indexOf = array.indexOf(remainder); // Tn: N * N, Sn: 1
+		if (indexOf != -1 && indexOf != i) { // Tn: N, Sn: 1
 			return true; // 1
 		}
 	}
